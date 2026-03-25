@@ -469,10 +469,6 @@ with tab1:
     credit_y14 = safe_history_value(company_history, selected_company, "Calificacion_crediticia", 14)
     img_y14 = safe_history_value(company_history, selected_company, "Calificacion_imagen", 14)
 
-    def plain_text(value):
-    if value is None:
-        return "N/D"
-    return str(value).replace("$", r"\$").replace("*", r"\*").replace("_", r"\_")
 
         quick_text = f"""
         • En el Año 14, {plain_text(selected_company_name)} reporta {plain_text(format_value('Ingresos_Total', safe_metric_value(income_df, selected_company, 'Ingresos_Total')))} en ingresos totales y {plain_text(format_value('Beneficio_Neto', safe_metric_value(income_df, selected_company, 'Beneficio_Neto')))} de beneficio neto.
