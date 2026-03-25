@@ -470,7 +470,7 @@ with tab1:
     img_y14 = safe_history_value(company_history, selected_company, "Calificacion_imagen", 14)
 
 
-        quick_text = f"""
+    quick_text = f"""
         • En el Año 14, {plain_text(selected_company_name)} reporta {plain_text(format_value('Ingresos_Total', safe_metric_value(income_df, selected_company, 'Ingresos_Total')))} en ingresos totales y {plain_text(format_value('Beneficio_Neto', safe_metric_value(income_df, selected_company, 'Beneficio_Neto')))} de beneficio neto.
 
         • Sus márgenes clave son {plain_text(format_value('Margen_Operativo', safe_metric_value(ratios_df, selected_company, 'Margen_Operativo')))} operativo y {plain_text(format_value('Margen_Neto', safe_metric_value(ratios_df, selected_company, 'Margen_Neto')))} neto.
