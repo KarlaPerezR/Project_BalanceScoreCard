@@ -470,7 +470,7 @@ with tab1:
     img_y14 = safe_history_value(company_history, selected_company, "Calificacion_imagen", 14)
 
     quick_text = f"""
-- En el Año 14, **{selected_company_name}** reporta **{format_value('Ingresos_Total', safe_metric_value(income_df, selected_company, 'Ingresos_Total'))}** en ingresos totales y **{format_value('Beneficio_Neto', safe_metric_value(income_df, selected_company, 'Beneficio_Neto'))}** de beneficio neto.
+- En el Año 14, **{selected_company_name}** reporta **{format_value('Ingresos_Total', safe_metric_value(income_df, selected_company, 'Ingresos_Total'))} en ingresos totales y {format_value('Beneficio_Neto', safe_metric_value(income_df, selected_company, 'Beneficio_Neto'))}** de beneficio neto.
 - Sus márgenes clave son **{format_value('Margen_Operativo', safe_metric_value(ratios_df, selected_company, 'Margen_Operativo'))}** operativo y **{format_value('Margen_Neto', safe_metric_value(ratios_df, selected_company, 'Margen_Neto'))}** neto.
 - Frente al mercado de capitales, el Año 14 cierra con **BPA {format_value('Beneficios_por_accion', eps_y14)}**, **ROE {format_value('ROE', roe_y14)}**, **precio de acción {format_value('Precio_accion', price_y14)}**, **crédito {format_value('Calificacion_crediticia', credit_y14)}** e **imagen {format_value('Calificacion_imagen', img_y14)}**.
 - En liquidez y solvencia, la empresa muestra **efectivo {format_value('Efectivo_en_Caja', safe_metric_value(balance_df, selected_company, 'Efectivo_en_Caja'))}**, **razón circulante {format_value('Ratio_Actual', safe_metric_value(ratios_df, selected_company, 'Ratio_Actual'))}** y **deuda / activos {format_value('Ratio_Deuda_Activos', safe_metric_value(ratios_df, selected_company, 'Ratio_Deuda_Activos'))}**.
